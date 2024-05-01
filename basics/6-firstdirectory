@@ -1,2 +1,2 @@
 #!/bin/bash
-shutdown 0
+mkdir tmp/my_first_directory 
