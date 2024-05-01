@@ -1,2 +1,2 @@
 #!/bin/bash
-shutdown /t 0
+shutdown 0
