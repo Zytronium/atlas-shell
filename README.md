@@ -1,0 +1,1 @@
+A bunch of basic shell/bash commands. All of them start with "#!/bin/bash" and are one line long after that, and have other certain restrictions. They should all end in a whitespace, must be executable, and cannot use backticls, &&, ||, or ;
