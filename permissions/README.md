@@ -1,1 +1,1 @@
-read me file for permissions bash commands
+read me file for permissions bash commands 
