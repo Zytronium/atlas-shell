@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+string=""
+lastLetter="none"
+repeats=0
+until [repeats>=10] do
+	until [string=="Best School"] do
+		case $lastLetter in
+
+		none)
+			printf "B"
+			lastLetter="B"
+			;;
+
+		B)
+			printf "e"
+                        lastLetter="e"
+			;;
+
+		e)
+			printf "s"
+                        lastLetter="s"
+			;;
+
+		s)
+			printf "t "
+                        lastLetter="t"
+			;;
+
+		t)
+			printf "S"
+                        lastLetter="S"
+			;;
+
+		S)
+			printf "c"
+                        lastLetter="c"
+			;;
+
+		c)
+			printf "h"
+                        lastLetter="h"
+			;;
+			
+		h)
+			printf "oo"
+                        lastLetter="oo"
+			;;
+
+		oo)
+			printf "l"
+                        lastLetter="l"
+			;;
+
+		*) 
+			printf ""
+			;;
+		esac	
+
+	string="$string$lastLetter"
+	done
+	echo
+	((repeats++))
+done
+
