@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+N=0
+while (($N != 10));
+do echo "Best School"; N=$((N+1))
+done
