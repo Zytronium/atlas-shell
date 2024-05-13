@@ -1,1 +1,1 @@
-read me file. loops, conditions and parsing.
+Read me file. Loops, conditions and parsing.
