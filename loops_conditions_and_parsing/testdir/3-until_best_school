@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# comment 
+repeats=0
+until ((repeats >= 10)); do
+	echo "Best School"
+	((repeats++))
+done
+

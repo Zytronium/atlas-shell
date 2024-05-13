@@ -2,8 +2,8 @@
 string=""
 lastLetter="none"
 repeats=0
-until [repeats>=10] do
-	until [string=="Best School"] do
+until ((repeats>=10)); do
+	until ((string=="Best School")); do
 		case $lastLetter in
 
 		none)
@@ -59,6 +59,6 @@ until [repeats>=10] do
 	string="$string$lastLetter"
 	done
 	echo
-	((repeats++))
+	repeats++
 done
 
