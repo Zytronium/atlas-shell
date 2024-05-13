@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #while n != 10, print Best School, N++. 
 N=0
-while (($N != 10));
+while ((N != 10));
 do echo "Best School"; N=$((N+1))
 done
