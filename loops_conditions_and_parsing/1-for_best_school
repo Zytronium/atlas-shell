@@ -1,2 +1,2 @@
-#!/bin/bash
+#!/usr/bin/env bash
 seq 10 | xargs -Iz echo "Best School"
