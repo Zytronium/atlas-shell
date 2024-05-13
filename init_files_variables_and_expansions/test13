@@ -1,0 +1,3 @@
+#!/bin/bash
+NUM=14
+echo -e "%.2f\n" $NUM 
