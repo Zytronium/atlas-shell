@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# I learned to do this to clear the console while actually still being able to scroll back up. I thought it would be funny to not use a for loop here, but I'll go back and change it to a for loop.
 seq 10 | xargs -Iz echo "Best School"
