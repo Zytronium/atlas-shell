@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-# idk why it wan't 2 hours, but I'm gonna aim for ym output to copy the example
+# displays 59 minutes for every hour, with 13 (0-12) hours 
 hours=0
-minutes=0
-echo "hours:"
-while ((hours<=59)); do
-	echo "$hours"
+minutes=1
+
+while ((hours<=12)); do
+	echo "Hour: $hours"
+	while ((minutes<=59)); do
+        	echo "$minutes"
+        	((minutes++))
+	done
+	if (($minutes >=60)); then
+                        minutes=1
+                fi
 	((hours++))
 done
-
-echo "hours:"
-while ((minutes<=12)); do
-	echo "$minutes"
-	((minutes++))
-done
-
