@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Repeat This a total of 20 times. n = how many times it's repeated. Print n. If n equals 4, also add bad luck from China, if 9, print bad luck from Japan, if 17, bad luck from Italy, else, just print the value of n.
-n=1
-while (($n<=20));
+n=1 
+while ((n<=20)); do
 	echo $n
-        do case $n in
+        case $n in
 
                 4)
                         echo "bad luck from China"
@@ -18,5 +18,5 @@ while (($n<=20));
 		;;
 
         esac
-((n++))
+	((n++))
 done
