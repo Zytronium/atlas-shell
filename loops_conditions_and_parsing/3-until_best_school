@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # because I can, it prints it one letter at a time (almost) 10 times.  
 targetStrg="BestSchool" #not needed anymore
-strg="B" #never worked well
+#strg="B" #never worked well
 lastLetter="B"
 strgRep=0
 repeats=0
@@ -58,11 +58,11 @@ until ((repeats>=10)); do
 		BestSchool)
 			printf "\n"
 			# lastLetter="$lastLetter"
-			strg=$targetStrg
+			#strg=$targetStrg
 			;;
 
 			*) 
-			strg=$targetStrg
+			#strg=$targetStrg
 			#echo "$strg"
 			;;
 		esac
