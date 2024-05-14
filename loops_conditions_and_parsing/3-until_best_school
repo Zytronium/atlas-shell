@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # because I can, it prints it one letter at a time (almost) 10 times.  
-targetStrg="BestSchool" #not needed anymore
+# targetStrg="BestSchool" #not needed anymore
 #strg="B" #never worked well
 lastLetter="B"
 strgRep=0
