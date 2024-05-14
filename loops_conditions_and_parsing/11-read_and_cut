@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# the
+# displays the username user id and home directory by reading from /etc/passwd
 while IFS=":" read -r username _ uid _ _ home _; do
     echo "$username"
     echo "$uid"
