@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # test123
-ls -1
+for ((i=0; i<=4;i++)); do
+	ls -1
+done
