@@ -2,20 +2,12 @@
 # Repeat This a total of 10 times. n = how many times it's repeated. If n equals 4, print bad luck, if 8, print good luck, else, print Best School.
 n=1
 while ((n<=10)); 
-	do case $n in
-
-		4)
-			echo "Bad Luck"
-		;;
-
-		8)
-			echo "Good Luck"
-		;;
-
-		*)
-			echo "Best School"
-		;;
-	esac
+	do if ((n == 4)); then
+		echo "Bad Luck"
+		elif ((n == 8)); then
+		echo "Good Luck"
+	else echo "Best School"
+	fi
 ((n++)) 
 done
 
