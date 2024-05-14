@@ -9,7 +9,7 @@ while ((hours<=12)); do
         	echo "$minutes"
         	((minutes++))
 	done
-	if (($minutes >=60)); then
+	if ((minutes >=60)); then
                         minutes=1
                 fi
 	((hours++))
