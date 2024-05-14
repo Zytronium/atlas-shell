@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # for every file in current directory, echo filename, but only the part after "-"
 for file in *; do
-        echo ${file#*-}
+        echo "${file#*-}"
 done
 
