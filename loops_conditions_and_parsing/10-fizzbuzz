@@ -10,5 +10,5 @@ for ((i=1; i<=100; i++)); do
     if ((i % 3 != 0)) && ((i % 5 != 0)); then
         printf "$i"
     fi
-    printf "%d" "\n"
+    printf "%s" "\n"
 done
