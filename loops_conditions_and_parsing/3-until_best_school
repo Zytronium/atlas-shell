@@ -1,64 +1,80 @@
 #!/usr/bin/env bash
-string=""
-lastLetter="none"
+# because I can, it prints it one letter at a time (almost) 10 times.  
+targetStrg="BestSchool" #not needed anymore
+strg="B" #never worked well
+lastLetter="B"
+strgRep=0
 repeats=0
 until ((repeats>=10)); do
-	until ((string=="Best School")); do
-		case $lastLetter in
+	until ((strgRep == 9)); do
+		((strgRep++))
+		case $lastLetter in #this took hours and hours... Even tho I knew how to do it the short way
 
-		none)
-			printf "B"
-			lastLetter="B"
-			;;
+		#"")
+		#	printf "${lastLetter}B"
+		#	lastLetter="${lastLetter}B"
+		#	;;
 
 		B)
-			printf "e"
-                        lastLetter="e"
+			printf "Be"
+                        lastLetter="${lastLetter}e"
 			;;
 
-		e)
+		Be)
 			printf "s"
-                        lastLetter="s"
+                        lastLetter="${lastLetter}s"
 			;;
 
-		s)
+		Bes)
 			printf "t "
-                        lastLetter="t"
+                        lastLetter="${lastLetter}t"
 			;;
 
-		t)
+		Best)
 			printf "S"
-                        lastLetter="S"
+                        lastLetter="${lastLetter}S"
 			;;
 
-		S)
+		BestS)
 			printf "c"
-                        lastLetter="c"
+                        lastLetter="${lastLetter}c"
 			;;
 
-		c)
+		BestSc)
 			printf "h"
-                        lastLetter="h"
+                        lastLetter="${lastLetter}h"
 			;;
 			
-		h)
+		BestSch)
 			printf "oo"
-                        lastLetter="oo"
+                        lastLetter="${lastLetter}oo"
 			;;
 
-		oo)
+		BestSchoo)
 			printf "l"
-                        lastLetter="l"
+                        lastLetter="${lastLetter}l"
 			;;
 
-		*) 
-			printf ""
+		BestSchool)
+			printf "\n"
+			# lastLetter="$lastLetter"
+			strg=$targetStrg
 			;;
-		esac	
 
-	string="$string$lastLetter"
+			*) 
+			strg=$targetStrg
+			#echo "$strg"
+			;;
+		esac
+		#echo "hello $strg"
+	# strg="$lastLetter"
+	# echo "strg is $strg"
+	# echo "lastletter is ${lastLetter}"
+	# echo "repeats is $repeats"
 	done
-	echo
-	repeats++
+	strg="B"
+	strgRep=0
+        lastLetter="B" 
+	((repeats++))
 done
 
