@@ -1,1 +1,14 @@
 #!/usr/bin/env bash
+# idk why it wan't 2 hours, but I'm gonna aim for ym output to copy the example
+hours=0
+minutes=0
+echo "hours:"
+while ((hours<=59)); do
+	echo "$hours"
+	((hours++)
+done
+echo "hours:"
+while ((minutes<=59)); do
+	echo "$minutes"
+	((minutes++))
+done
