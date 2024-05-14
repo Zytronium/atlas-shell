@@ -72,7 +72,7 @@ until ((repeats>=10)); do
 	# echo "lastletter is ${lastLetter}"
 	# echo "repeats is $repeats"
 	done
-	strg="B"
+	# strg="B"
 	strgRep=0
         lastLetter="B" 
 	((repeats++))
